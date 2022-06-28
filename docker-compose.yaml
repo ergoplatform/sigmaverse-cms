@@ -1,7 +1,6 @@
 services:
   strapi:
-    build:
-      context: .
+    build: .
     ports:
       - 80:80
 
