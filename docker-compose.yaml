@@ -3,5 +3,5 @@ services:
   strapi:
     build: .
     ports:
-      - 80:80
+      - 1337:1337
 

@@ -10,5 +10,5 @@ RUN yarn install
 WORKDIR /opt/app
 COPY ./ .
 RUN yarn build
-EXPOSE 80
+EXPOSE 1337
 CMD ["yarn", "start"]
