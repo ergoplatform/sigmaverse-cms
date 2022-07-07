@@ -5,7 +5,7 @@ services:
     ports:
       - 1337:1337
     depends_on:
-      - postgres
+      - postgres-cms
   postgres-cms:
       image: postgres:11-alpine
       shm_size: 8g
