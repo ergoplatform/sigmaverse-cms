@@ -7,7 +7,7 @@ module.exports = ({ env }) => ({
       port: env.int('DATABASE_PORT', 5434),
       database: env('DATABASE_NAME', 'postgres'),
       user: env('DATABASE_USERNAME', 'postgres'),
-      password: env('DATABASE_PASSWORD'),
+      password: env('POSTGRES_PASSWORD'),
     },
   },
 });

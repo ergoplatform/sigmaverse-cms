@@ -12,4 +12,4 @@ services:
       ports:
         - "5434:5432"
       volumes:
-        - /data/sigmaverse-postgres:/var/lib/postgresql/data:rw
+        - ~/data/sigmaverse-postgres:/var/lib/postgresql/data:rw
