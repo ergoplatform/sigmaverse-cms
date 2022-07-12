@@ -1,4 +1,8 @@
 version: "3.4"
+networks:
+  explorer-network:
+    external:
+      name: explorer-network
 services:
   strapi:
     build: .
