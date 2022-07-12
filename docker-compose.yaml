@@ -1,21 +1,20 @@
 version: "3.4"
 networks:
-  explorer-network:
-    external:
-      name: explorer-network
+  strapi:
+    external: true
 services:
   strapi:
     build: .
     ports:
       - 1337:1337
     networks:
-      - explorer-network
+      - strapi
     depends_on:
       - postgres-cms
   postgres-cms:
     image: postgres:11-alpine
     networks:
-     - explorer-network
+     - strapi
     shm_size: 8g
     environment:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
