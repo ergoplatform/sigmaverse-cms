@@ -4,14 +4,18 @@ services:
     build: .
     ports:
       - 1337:1337
+    networks:
+      - explorer-network
     depends_on:
       - postgres-cms
   postgres-cms:
-      image: postgres:11-alpine
-      shm_size: 8g
-      environment:
-        POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
-      ports:
-        - "5434:5432"
-      volumes:
-        - ~/data/sigmaverse-postgres:/var/lib/postgresql/data:rw
+    image: postgres:11-alpine
+    networks:
+     - explorer-network
+    shm_size: 8g
+    environment:
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    ports:
+      - "5434:5432"
+    volumes:
+      - ~/data/sigmaverse-postgres:/var/lib/postgresql/data:rw
