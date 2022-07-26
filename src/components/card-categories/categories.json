@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_card_categories_categories",
+  "info": {
+    "displayName": "Categories"
+  },
+  "options": {},
+  "attributes": {
+    "projectCategories": {
+      "type": "enumeration",
+      "enum": [
+        "dApps",
+        "Privacy",
+        "NFTs",
+        "Metaverse",
+        "Explore",
+        "Mining",
+        "Tooling",
+        "Tokens",
+        "Wallets",
+        "Dev Tools"
+      ],
+      "required": true
+    }
+  }
+}

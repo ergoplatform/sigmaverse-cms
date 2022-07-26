@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "carousel_main_cards",
+  "info": {
+    "singularName": "carousel-main-card",
+    "pluralName": "carousel-main-cards",
+    "displayName": "Main Carousel",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "projectTitle": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "websiteLink": {
+      "type": "string",
+      "required": true
+    },
+    "logotype": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "carouselImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}
