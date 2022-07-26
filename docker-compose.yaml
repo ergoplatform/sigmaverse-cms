@@ -12,6 +12,6 @@ services:
     environment:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     ports:
-      - "${DATABASE_PORT}:5432"
+      - "${DOCKER_PORT}:5432"
     volumes:
       - ~/data/sigmaverse-postgres:/var/lib/postgresql/data:rw
