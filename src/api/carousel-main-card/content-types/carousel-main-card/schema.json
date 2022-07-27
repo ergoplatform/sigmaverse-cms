@@ -43,6 +43,12 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "dateAdded": {
+      "type": "datetime"
+    },
+    "dateUpdated": {
+      "type": "datetime"
     }
   }
 }
