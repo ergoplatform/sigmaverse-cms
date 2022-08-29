@@ -28,30 +28,18 @@
       "type": "media",
       "multiple": false,
       "required": true,
-      "allowedTypes": [
-        "images"
-      ]
+      "allowedTypes": ["images"]
     },
     "preview": {
       "type": "media",
       "multiple": false,
       "required": true,
-      "allowedTypes": [
-        "images"
-      ]
+      "allowedTypes": ["images"]
     },
     "categories": {
       "type": "component",
       "repeatable": false,
       "component": "card-categories.categories"
-    },
-    "dateAdded": {
-      "type": "datetime",
-      "required": true
-    },
-    "dateUpdated": {
-      "type": "datetime",
-      "required": true
     }
   }
 }
