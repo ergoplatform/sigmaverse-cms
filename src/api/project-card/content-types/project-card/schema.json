@@ -45,9 +45,9 @@
       "repeatable": false,
       "component": "card-categories.categories"
     },
-    "project_category": {
+    "project_categories": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "api::project-category.project-category"
     }
   }
